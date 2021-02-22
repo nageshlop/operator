@@ -1,0 +1,8 @@
+language: go
+sudo: false
+dist: xenial
+go:
+  - 1.5.x
+
+script:
+  - make
