@@ -1,8 +1,10 @@
 language: go
 sudo: false
 dist: xenial
+arch:
+  - ppc64le
+  - amd64
 go:
   - 1.5.x
 
-script:
-  - make
+script: go test -v ./...
